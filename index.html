@@ -3,91 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yoonique Labs — 생활을 조금 더 편하게 만드는 모바일 앱</title>
-<meta name="description" content="Yoonique Labs는 주차, 생활 편의 분야의 모바일 애플리케이션을 만드는 대한민국의 앱 개발 스튜디오입니다.">
-<meta property="og:title" content="Yoonique Labs">
-<meta property="og:description" content="생활을 조금 더 편하게 만드는 모바일 앱을 만듭니다.">
+<title>유니크랩스 Yoonique Labs | 배드민턴·정산·주차·기록 앱</title>
+<meta name="description" content="유니크랩스 공식 홈페이지. 콕플러스, 깔끔정산, 여기주차, 교대한눈, 폴드8노트 등 Android 앱의 기능과 사용법을 확인하고 Google Play에서 설치하세요.">
+<meta property="og:title" content="유니크랩스 Yoonique Labs | 공식 앱 안내">
+<meta property="og:description" content="유니크랩스 공식 홈페이지. 콕플러스, 깔끔정산, 여기주차, 교대한눈, 폴드8노트 등 Android 앱의 기능과 사용법을 확인하고 Google Play에서 설치하세요.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230F172A'/><text x='50' y='69' font-size='58' font-family='Georgia,serif' fill='%23F8FAFC' text-anchor='middle'>Y</text></svg>">
-<style>
-  :root{
-    --ink:#0F172A;
-    --ink-2:#334155;
-    --ink-3:#64748B;
-    --line:#E2E8F0;
-    --bg:#FFFFFF;
-    --bg-2:#F8FAFC;
-    --accent:#2563EB;
-    --max:1080px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",
-      "Malgun Gothic",system-ui,sans-serif;
-    color:var(--ink);background:var(--bg);
-    line-height:1.7;-webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-
-  /* header */
-  header{
-    position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);
-    backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line);
-  }
-  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.02em;font-size:17px;text-decoration:none;color:var(--ink)}
-  .logo .mark{width:28px;height:28px;border-radius:8px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-size:16px}
-  .nav ul{display:flex;gap:26px;list-style:none}
-  .nav a.link{color:var(--ink-2);text-decoration:none;font-size:14.5px}
-  .nav a.link:hover{color:var(--accent)}
-  @media(max-width:640px){.nav ul{display:none}}
-
-  /* hero */
-  .hero{padding:96px 0 72px;border-bottom:1px solid var(--line)}
-  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-weight:600}
-  h1{font-size:clamp(32px,5.2vw,52px);line-height:1.25;letter-spacing:-.03em;margin:16px 0 20px;font-weight:800}
-  .lede{font-size:clamp(16px,2vw,19px);color:var(--ink-2);max-width:640px}
-  .cta{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
-  .btn{display:inline-block;padding:12px 22px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;transition:.15s}
-  .btn-primary{background:var(--ink);color:#fff}
-  .btn-primary:hover{background:var(--accent)}
-  .btn-ghost{border:1px solid var(--line);color:var(--ink-2)}
-  .btn-ghost:hover{border-color:var(--ink-3)}
-
-  /* sections */
-  section{padding:80px 0}
-  section + section{border-top:1px solid var(--line)}
-  h2{font-size:clamp(24px,3.4vw,32px);letter-spacing:-.02em;font-weight:700;margin-bottom:14px}
-  .sub{color:var(--ink-3);margin-bottom:40px;max-width:620px}
-
-  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-  .card{border:1px solid var(--line);border-radius:16px;padding:28px;background:var(--bg-2)}
-  .card h3{font-size:19px;font-weight:700;letter-spacing:-.01em;margin-bottom:8px}
-  .card .tag{display:inline-block;font-size:12px;font-weight:600;color:var(--ink-3);
-    border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px;margin-bottom:14px}
-  .card p{color:var(--ink-2);font-size:15px}
-  .card .pkg{margin-top:16px;font-size:13px;color:var(--ink-3);font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-
-  .values{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-  .values h3{font-size:17px;font-weight:700;margin-bottom:6px}
-  .values p{color:var(--ink-2);font-size:15px}
-  .num{font-family:Georgia,serif;font-size:14px;color:var(--accent);font-weight:700;letter-spacing:.08em}
-
-  /* contact */
-  .contact-box{border:1px solid var(--line);border-radius:16px;padding:32px;display:grid;gap:18px;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-  .contact-box .label{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:4px}
-  .contact-box a{color:var(--accent);text-decoration:none}
-  .contact-box a:hover{text-decoration:underline}
-
-  /* footer */
-  footer{border-top:1px solid var(--line);background:var(--bg-2);padding:44px 0;font-size:13.5px;color:var(--ink-3)}
-  footer .biz{display:grid;gap:4px 24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-bottom:22px}
-  footer .legal{display:flex;gap:18px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line)}
-  footer a{color:var(--ink-2);text-decoration:none}
-  footer a:hover{color:var(--accent)}
-</style>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="canonical" href="https://yooniquelabs.kr/">
+<meta property="og:url" content="https://yooniquelabs.kr/">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Yoonique Labs", "alternateName": "유니크랩스", "url": "https://yooniquelabs.kr/", "email": "hello@yooniquelabs.kr", "sameAs": ["https://play.google.com/store/apps/developer?id=Yoonique+Labs"]}</script>
 </head>
 <body>
 
@@ -111,7 +36,7 @@
       <h1>생활을 조금 더 편하게<br>만드는 모바일 앱.</h1>
       <p class="lede">
         Yoonique Labs는 일상에서 반복되는 작은 불편을 찾아 앱으로 해결하는 모바일 앱 개발 스튜디오입니다.
-        주차, 생활 편의 영역에서 Android 애플리케이션을 기획하고 개발합니다.
+        배드민턴 클럽 운영, 모임 정산, 주차 기록, 교대근무 일정과 일상 기록을 돕는 Android 앱을 만듭니다.
       </p>
       <div class="cta">
         <a class="btn btn-primary" href="#apps">앱 살펴보기</a>
@@ -136,7 +61,7 @@
         <div>
           <p class="num">02</p>
           <h3>어디에 집중하나요</h3>
-          <p>주차 정보, 생활 편의 등 오프라인의 불편을 앱으로 옮겨 오는 영역에 집중합니다.</p>
+          <p>동호회 운영과 생활 기록을 편하게 만드는 도구, 짧게 즐기는 모바일 게임에 집중합니다.</p>
         </div>
         <div>
           <p class="num">03</p>
@@ -147,26 +72,15 @@
     </div>
   </section>
 
-  <section id="apps">
-    <div class="wrap">
-      <h2>앱</h2>
-      <p class="sub">현재 Google Play에서 개발·테스트 중인 애플리케이션입니다.</p>
-      <div class="grid">
-        <article class="card">
-          <span class="tag">주차 · Parking</span>
-          <h3>여기주차</h3>
-          <p>내 주변 주차장을 빠르게 찾고, 주차한 위치를 잊지 않도록 도와주는 주차 도우미 앱입니다.</p>
-          <p class="pkg">com.yeogi.parking</p>
-        </article>
-        <article class="card">
-          <span class="tag">생활 · Lifestyle</span>
-          <h3>콕플러스</h3>
-          <p>일상에서 자주 쓰는 기능을 한곳에 모아 더 간편하게 쓸 수 있도록 만든 생활 편의 앱입니다.</p>
-          <p class="pkg">kr.co.kokplus.app</p>
-        </article>
-      </div>
-    </div>
-  </section>
+  <section id="apps"><div class="wrap"><h2>유니크랩스 앱</h2><p class="sub">필요한 앱을 골라 기능과 사용법을 확인하세요. Google Play에서 설치할 수 있습니다.</p><div class="grid"><article class="card"><span class="tag">배드민턴 · 동호회</span><h3><a href="/apps/kokplus/">콕플러스</a></h3><p>배드민턴 동호회와 대회 운영자를 위한 앱입니다. 대진표를 만들고 회비와 회원을 관리하며 코트별 경기 진행 상황을 확인할 수 있습니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/kokplus/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=kr.co.kokplus.app&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">생활 · 더치페이</span><h3><a href="/apps/kkalkkeum/">깔끔정산</a></h3><p>회식과 여행에서 함께 쓴 돈을 나누는 더치페이 계산기입니다. 차수별 지출과 개인별 금액을 정리하고 정산표를 카카오톡으로 공유할 수 있습니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/kkalkkeum/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=kr.yoonique.kkalkkeum&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">기록 · 폴더블</span><h3><a href="/apps/foldnote/">폴드8노트</a></h3><p>갤럭시 Z 폴드처럼 접히는 폰을 위한 메모·일기장입니다. 화면을 펼치면 왼쪽 목록과 오른쪽 쓰기 화면을 함께 보며 기록할 수 있습니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/foldnote/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.yoonquelabs.foldnote&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">게임 · 단어 퍼즐</span><h3><a href="/apps/chosung5/">오늘의 초성 5</a></h3><p>생활 단어와 속담으로 즐기는 초성퀴즈입니다. 매일 같은 다섯 문제를 풀고, 열 문제씩 이어지는 무한모드에 도전할 수 있습니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/chosung5/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=kr.co.yooniquelabs.chosung5&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">자동차 · 주차 기록</span><h3><a href="/apps/yeogi-parking/">여기주차</a></h3><p>주차장 층수와 구역, 기둥 번호를 음성메모와 사진으로 저장하는 주차 위치 기록 앱입니다. 지하주차장에서도 직접 남긴 기록을 보고 차를 찾는 데 도움을 줍니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/yeogi-parking/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.yeogi.parking&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">게임 · 인형뽑기</span><h3><a href="/apps/clawking3d/">뽑기왕 3D</a></h3><p>집게와 인형의 움직임을 물리 시뮬레이션으로 즐기는 3D 크레인 게임입니다. 연습 모드에서 감각을 익히고 스테이지와 인형 도감 수집에 도전하세요.</p><div class="cta"><a class="btn btn-primary" href="/apps/clawking3d/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=com.cupidjjang.clawking3d&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">기록 · 배달 수입</span><h3><a href="/apps/rider-net/">라이더 순익</a></h3><p>오토바이 배달 라이더의 수입과 차량 비용을 기록하는 앱입니다. 매출뿐 아니라 비용을 뺀 순수익을 확인하고 월별 내역을 정리할 수 있습니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/rider-net/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=kr.co.yooniquelabs.ridernet&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">자동차 · 주유비 계산</span><h3><a href="/apps/juyuhalkka/">주유할까?</a></h3><p>주유소 가격 차이뿐 아니라 추가 이동비까지 고려하는 주유비 절약 계산기입니다. 가격·거리·연비·주유량을 직접 입력해 예상 순절약액을 비교합니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/juyuhalkka/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=kr.co.yooniquelabs.juyuhalkka&amp;hl=ko&amp;gl=KR">Google Play</a></div></article>
+<article class="card"><span class="tag">일정 · 교대근무</span><h3><a href="/apps/gyodae-hannun/">교대한눈</a></h3><p>간호사·생산직·보안·시설직 등 교대근무자를 위한 근무표 달력입니다. 반복 패턴과 여러 날짜 일괄 입력으로 일정을 정리하고 근무 전 알림을 설정할 수 있습니다.</p><div class="cta"><a class="btn btn-primary" href="/apps/gyodae-hannun/">기능과 사용법</a><a class="btn btn-ghost" href="https://play.google.com/store/apps/details?id=kr.co.gyodaehannun.app&amp;hl=ko&amp;gl=KR">Google Play</a></div></article></div></div></section>
 
   <section id="values">
     <div class="wrap">
