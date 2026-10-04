@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>クレーン・ドリームズ 確率情報 — Yoonique Labs</title>
+<style>body{font-family:-apple-system,'Malgun Gothic','Hiragino Sans','Meiryo',sans-serif;max-width:860px;margin:24px auto;padding:0 16px;color:#222;line-height:1.6}table{border-collapse:collapse;width:100%;margin:8px 0 20px}th,td{border:1px solid #ddd;padding:6px 8px;text-align:left}th{background:#f4f1fb}td.n{text-align:right}h1{font-size:24px}h2{font-size:19px;margin-top:28px}</style>
+</head>
+<body>
+<h1>クレーン・ドリームズ 確率情報</h1>
+<p><a href="odds.html">한국어</a> · <a href="odds_en.html">English</a> · <a href="odds_ja.html">日本語</a></p>
+<p>アプリ: クレーン・ドリームズ (com.yooniquelabs.cranedreams) · 対象バージョン: 1.0.1 以降 · 提供: Yoonique Labs</p>
+<p>コイン1枚で1回プレイできます。コインは無料チャージ・広告報酬・有料購入で入手できます。獲得したぬいぐるみはゲーム内の図鑑にのみ記録される仮想アイテムで、現金や実物とは交換できません。確率を変更する場合は、このページとゲーム内のお知らせで事前にお知らせします。</p>
+<h2>1. つかみ成功確率</h2>
+<p>アームがぬいぐるみの真ん中をつかんだときの、難易度別の基本成功確率です。</p>
+<table><tr><th>難易度</th><th>基本成功確率</th></tr>
+<tr><td>★ (1)</td><td class="n">90%</td></tr>
+<tr><td>★★ (2)</td><td class="n">78%</td></tr>
+<tr><td>★★★ (3)</td><td class="n">62%</td></tr>
+<tr><td>★★★★ (4)</td><td class="n">46%</td></tr>
+<tr><td>★★★★★ (5)</td><td class="n">32%</td></tr>
+</table>
+<ul><li>実際の成功確率 = 基本成功確率 × (0.3 + 0.7 × 中心一致度) + 連続失敗ボーナス。中心一致度はアームの中心とぬいぐるみの中心の距離により、1(真ん中)から0(27cm以上ずれ)までです。</li><li>アームの下に3個以上重なっている場合は×0.9が適用されます。最大97%です。</li><li>成功判定後、持ち上げる間に落ちる確率は (100% − 成功確率) × 55% で、3%から50%の間に制限されます。確定成功(天井)のときは0%です。</li></ul>
+<h2>2. 連続失敗ボーナス (天井)</h2>
+<ul><li>失敗するたびに成功確率が7%pずつ上がります。</li><li>8回連続で失敗すると、次のプレイでアームがぬいぐるみの中心付近(一致度0.15超)をつかんだ場合、確定成功となり落ちません。</li><li>ぬいぐるみを獲得するとボーナスは0に戻ります。</li></ul>
+<h2>3. ぬいぐるみ出現確率</h2>
+<p>台の中のぬいぐるみを獲得すると、空いた場所に新しいぬいぐるみが1個、下記の確率で補充されます。最初に台を満たすとき、「王冠くま」が必ず1個含まれます。</p>
+<table><tr><th>ランク</th><th>種類数</th><th>ランク合計確率</th></tr>
+<tr><td>伝説</td><td class="n">20</td><td class="n">2.6110%</td></tr>
+<tr><td>レア</td><td class="n">36</td><td class="n">11.2924%</td></tr>
+<tr><td>ノーマル</td><td class="n">144</td><td class="n">86.0966%</td></tr>
+</table>
+<table><tr><th>#</th><th>ぬいぐるみ</th><th>ランク</th><th>難易度</th><th>出現確率</th></tr>
+<tr><td class="n">1</td><td>たてがみライオン</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">2</td><td>はなやかクジャク</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">3</td><td>おひめさまひつじ</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">4</td><td>はなのこじか</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">5</td><td>いちごうさぎ</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">6</td><td>ルドルフ</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">7</td><td>マトリョーシカ</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">8</td><td>にじ</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">9</td><td>にじユニコーン</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">10</td><td>フェニックス</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">11</td><td>王冠スワン</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">12</td><td>王冠バーガー</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">13</td><td>イッカク</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">14</td><td>ちょうちんアンコウ</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">15</td><td>もふもふマンモス</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">16</td><td>こがねの黒猫</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">17</td><td>黄金スフィンクス</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">18</td><td>王冠くま</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">19</td><td>黄金パイン</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">20</td><td>きんのたまごどり</td><td>伝説</td><td>★★★★★</td><td class="n">0.1305%</td></tr>
+<tr><td class="n">21</td><td>サーベルタイガー</td><td>レア</td><td>★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">22</td><td>ハチドリ</td><td>レア</td><td>★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">23</td><td>こども九尾</td><td>レア</td><td>★★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">24</td><td>あかちゃんドラゴン</td><td>レア</td><td>★★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">25</td><td>こどもペガサス</td><td>レア</td><td>★★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">26</td><td>はやあしチーター</td><td>レア</td><td>★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">27</td><td>すい星</td><td>レア</td><td>★★★</td><td class="n">0.2611%</td></tr>
+<tr><td class="n">28</td><td>ジンベエザメ</td><td>レア</td><td>★★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">29</td><td>きんぎょ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">30</td><td>キリン</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">31</td><td>キンパ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">32</td><td>ちびロボット</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">33</td><td>なまけもの</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">34</td><td>ひらひらチョウ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">35</td><td>ハクトウワシ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">36</td><td>レッサーパンダ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">37</td><td>まほうカエル</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">38</td><td>ぎょうざ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">39</td><td>キノコの妖精</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">40</td><td>フグ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">41</td><td>ホッキョクギツネ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">42</td><td>ブラキオサウルス</td><td>レア</td><td>★★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">43</td><td>フェネックギツネ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">44</td><td>食パンねこ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">45</td><td>アボカド</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">46</td><td>アルパカ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">47</td><td>うちゅうペンギン</td><td>レア</td><td>★★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">48</td><td>ウーパールーパー</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">49</td><td>コーギー</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">50</td><td>貝だっこカワウソ</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">51</td><td>ジンジャーくま</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">52</td><td>くるくるカメレオン</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">53</td><td>土星</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">54</td><td>ぶどう</td><td>レア</td><td>★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">55</td><td>バルーン犬</td><td>レア</td><td>★★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">56</td><td>マッコウクジラ</td><td>レア</td><td>★★★★</td><td class="n">0.3264%</td></tr>
+<tr><td class="n">57</td><td>ワニくん</td><td>ノーマル</td><td>★★★★</td><td class="n">0.3916%</td></tr>
+<tr><td class="n">58</td><td>セイウチ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.4569%</td></tr>
+<tr><td class="n">59</td><td>シャチ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.4569%</td></tr>
+<tr><td class="n">60</td><td>あかちゃんゾウ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.4569%</td></tr>
+<tr><td class="n">61</td><td>こどもサイ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.4569%</td></tr>
+<tr><td class="n">62</td><td>こどもカバ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.4569%</td></tr>
+<tr><td class="n">63</td><td>アリクイ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">64</td><td>マンボウ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">65</td><td>ロバ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">66</td><td>ドーナツくま</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">67</td><td>タンチョウヅル</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">68</td><td>赤いロブスター</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">69</td><td>ウミガメ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">70</td><td>赤ちゃんゴリラ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">71</td><td>赤ちゃんラクダ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">72</td><td>アンキロサウルス</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">73</td><td>きかんしゃ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">74</td><td>シチメンチョウ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">75</td><td>カンガルー</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">76</td><td>のっぽダチョウ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">77</td><td>名探偵キツネ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">78</td><td>トリケラトプス</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">79</td><td>フラミンゴ</td><td>ノーマル</td><td>★★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">80</td><td>タツノオトシゴ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5222%</td></tr>
+<tr><td class="n">81</td><td>UFO</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">82</td><td>かんごしうさぎ</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">83</td><td>ウミウシ</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">84</td><td>けいさついぬ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">85</td><td>目玉焼き</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">86</td><td>ゴールデンわんこ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">87</td><td>ちびハリネズミ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">88</td><td>ちびラプトル</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">89</td><td>ちびコウモリ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">90</td><td>ちびキツネ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">91</td><td>ちびイカ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">92</td><td>ちびエイリアン</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">93</td><td>ちびおばけ</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">94</td><td>ワタリガニ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">95</td><td>ゆきの結晶</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">96</td><td>ダックスフント</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">97</td><td>カタツムリ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">98</td><td>イルカ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">99</td><td>とぐろへび</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">100</td><td>ちびロケット</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">101</td><td>ロップイヤーうさぎ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">102</td><td>マカロン</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">103</td><td>バナナ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">104</td><td>バナナざる</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">105</td><td>ドームあたまくん</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">106</td><td>ピカピカ雷</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">107</td><td>ベルーガ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">108</td><td>フクロウ</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">109</td><td>しろくま</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">110</td><td>ブロッコリー</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">111</td><td>ブロックくん</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">112</td><td>ビションフリーゼ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">113</td><td>三色だんご</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">114</td><td>ヤドカリ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">115</td><td>しょうぼうくま</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">116</td><td>スイカ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">117</td><td>ステゴサウルス</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">118</td><td>ちびキョウリュウ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">119</td><td>赤ちゃんバク</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">120</td><td>あかちゃんアザラシ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">121</td><td>ベビーシャーク</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">122</td><td>こどもやぎ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">123</td><td>あかちゃんパンダ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">124</td><td>こどもトラ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">125</td><td>アルマジロ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">126</td><td>アイスいぬ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">127</td><td>おしゃべりインコ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">128</td><td>シマウマ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">129</td><td>起き上がりこぼし</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">130</td><td>とうもろこし</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">131</td><td>シェフねこ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">132</td><td>のんびりリクガメ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">133</td><td>わんぱくアライグマ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">134</td><td>ホルスタイン</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">135</td><td>ぷにサイコロ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">136</td><td>地球</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">137</td><td>さくらんぼ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">138</td><td>カップケーキねこ</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">139</td><td>オオハシどり</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">140</td><td>トイプードル</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">141</td><td>ペルシャねこ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">142</td><td>ペリカン</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">143</td><td>子ヒョウ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">144</td><td>プテラノドン</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">145</td><td>ホットドッグ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">146</td><td>おひさま</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">147</td><td>かいぞくハムスター</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">148</td><td>ハスキー</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">149</td><td>かぼちゃの妖精</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">150</td><td>がかコアラ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">151</td><td>ちび火星</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">152</td><td>イボイノシシ</td><td>ノーマル</td><td>★★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">153</td><td>シロフクロウ</td><td>ノーマル</td><td>★★</td><td class="n">0.5875%</td></tr>
+<tr><td class="n">154</td><td>カモメ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">155</td><td>じゃがいも</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">156</td><td>たまごのあかちゃん</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">157</td><td>こうふモグラ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">158</td><td>くもさん</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">159</td><td>モルモット</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">160</td><td>みつばち</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">161</td><td>ゆきだるま</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">162</td><td>にんじん</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">163</td><td>ちびトカゲ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">164</td><td>どんぐりリス</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">165</td><td>いちご</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">166</td><td>ぽっちゃりネコ</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">167</td><td>レモン</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">168</td><td>リボンかも</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">169</td><td>お風呂アヒル</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">170</td><td>テントウムシ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">171</td><td>ミーアキャット</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">172</td><td>きらきら星</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">173</td><td>もも</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">174</td><td>もふもふヒツジ</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">175</td><td>ヒトデ</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">176</td><td>たい焼き</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">177</td><td>にじ色ハト</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">178</td><td>しずく</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">179</td><td>赤いりんご</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">180</td><td>はなサボテン</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">181</td><td>ぷにぷにウニ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">182</td><td>しばいぬ</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">183</td><td>こぶた</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">184</td><td>こどもペンギン</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">185</td><td>ねぼすけお月様</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">186</td><td>ぶちエイ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">187</td><td>おにぎり</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">188</td><td>まるまるスズメ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">189</td><td>コアラ</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">190</td><td>キーウィどり</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">191</td><td>プリンひよこ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">192</td><td>ピンクタコちゃん</td><td>ノーマル</td><td>★★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">193</td><td>クラゲ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">194</td><td>カクレクマノミ</td><td>ノーマル</td><td>★★</td><td class="n">0.6527%</td></tr>
+<tr><td class="n">195</td><td>ちびペンギン</td><td>ノーマル</td><td>★★</td><td class="n">0.7180%</td></tr>
+<tr><td class="n">196</td><td>うちゅうウサギ</td><td>ノーマル</td><td>★★</td><td class="n">0.7180%</td></tr>
+<tr><td class="n">197</td><td>ゼリースライム</td><td>ノーマル</td><td>★</td><td class="n">0.7180%</td></tr>
+<tr><td class="n">198</td><td>みどりアマガエル</td><td>ノーマル</td><td>★★</td><td class="n">0.7180%</td></tr>
+<tr><td class="n">199</td><td>まるまるハムスター</td><td>ノーマル</td><td>★★</td><td class="n">0.7180%</td></tr>
+<tr><td class="n">200</td><td>ぴよこ</td><td>ノーマル</td><td>★</td><td class="n">0.7833%</td></tr>
+</table>
+<p>お問い合わせ: <a href="mailto:hello@yooniquelabs.kr">hello@yooniquelabs.kr</a></p>
+</body>
+</html>
