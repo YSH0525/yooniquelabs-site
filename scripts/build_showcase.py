@@ -7,9 +7,9 @@ apps = json.loads((ROOT / 'data/apps.json').read_text(encoding='utf-8-sig'))
 guides = json.loads((ROOT / 'data/guides.json').read_text(encoding='utf-8-sig'))
 blogs = json.loads((ROOT / 'data/blog-posts.json').read_text(encoding='utf-8-sig'))
 E = html.escape
-groups = {'kokplus':'운동','kkalkkeum':'생활','foldnote':'기록','chosung5':'게임','yeogi-parking':'생활','clawking3d':'게임','rider-net':'기록','juyuhalkka':'생활','gyodae-hannun':'기록'}
-blurbs = {'kokplus':'코트에서는 경기에만 집중하세요.','kkalkkeum':'함께 쓴 돈, 기분 좋게 나누세요.','foldnote':'펼친 화면에, 오늘을 기록하세요.','chosung5':'오늘의 다섯 문제, 머리를 깨우는 시간.','yeogi-parking':'차를 세운 곳, 말 한마디로 기록.','clawking3d':'손끝으로 조준하고, 인형을 모으세요.','rider-net':'매출 너머, 내 손에 남는 수익.','juyuhalkka':'조금 더 가서 넣으면 정말 이득일까요?','gyodae-hannun':'반복되는 근무표를 한눈에.'}
-symbols = {'kokplus':'↗','kkalkkeum':'÷','foldnote':'▤','chosung5':'ㄱㄴ','yeogi-parking':'P','clawking3d':'✳','rider-net':'₩','juyuhalkka':'+','gyodae-hannun':'31'}
+groups = {'kokplus':'운동','kkalkkeum':'생활','foldnote':'기록','chosung5':'게임','yeogi-parking':'생활','clawking3d':'게임','rider-net':'기록','juyuhalkka':'생활','gyodae-hannun':'기록','cranedreams':'게임'}
+blurbs = {'kokplus':'코트에서는 경기에만 집중하세요.','kkalkkeum':'함께 쓴 돈, 기분 좋게 나누세요.','foldnote':'펼친 화면에, 오늘을 기록하세요.','chosung5':'오늘의 다섯 문제, 머리를 깨우는 시간.','yeogi-parking':'차를 세운 곳, 말 한마디로 기록.','clawking3d':'손끝으로 조준하고, 인형을 모으세요.','rider-net':'매출 너머, 내 손에 남는 수익.','juyuhalkka':'조금 더 가서 넣으면 정말 이득일까요?','gyodae-hannun':'반복되는 근무표를 한눈에.','cranedreams':'네온 기계 속 인형 200종, 하나씩 모으세요.'}
+symbols = {'kokplus':'↗','kkalkkeum':'÷','foldnote':'▤','chosung5':'ㄱㄴ','yeogi-parking':'P','clawking3d':'✳','rider-net':'₩','juyuhalkka':'+','gyodae-hannun':'31','cranedreams':'★'}
 def play(a): return 'https://play.google.com/store/apps/details?id='+a['package']+'&hl=ko&gl=KR'
 def shot(slug):
     for ext in ('png','jpg'):
@@ -23,8 +23,8 @@ home=(ROOT/'index.html').read_text(encoding='utf-8')
 head=home[:home.index('<body')]
 head=re.sub(r'<title>.*?</title>','<title>유니크랩스 | 일상을 편하게, 쉬는 시간을 즐겁게</title>',head)
 head=re.sub(r'<meta property="og:title"[^>]*>', '<meta property="og:title" content="유니크랩스 | 일상을 편하게, 쉬는 시간을 즐겁게">',head)
-head=re.sub(r'<meta property="og:description"[^>]*>', '<meta property="og:description" content="생활·기록·운동·게임. 유니크랩스의 9가지 Android 앱을 실제 화면과 함께 만나보세요.">',head)
-head=re.sub(r'<meta name="description"[^>]*>', '<meta name="description" content="유니크랩스의 9가지 Android 앱을 만나보세요. 콕플러스, 교대한눈, 여기주차, 깔끔정산, 폴드8노트와 인형뽑기 게임 뽑기왕 3D의 실제 화면과 사용법, 설치 링크를 안내합니다.">',head)
+head=re.sub(r'<meta property="og:description"[^>]*>', '<meta property="og:description" content="생활·기록·운동·게임. 유니크랩스의 10가지 Android 앱을 실제 화면과 함께 만나보세요.">',head)
+head=re.sub(r'<meta name="description"[^>]*>', '<meta name="description" content="유니크랩스의 10가지 Android 앱을 만나보세요. 콕플러스, 교대한눈, 여기주차, 깔끔정산, 폴드8노트와 인형뽑기 게임 뽑기왕 3D, 크레인 드림즈의 실제 화면과 사용법, 설치 링크를 안내합니다.">',head)
 if '/assets/showcase.css' not in head: head=head.replace('</head>','<link rel="stylesheet" href="/assets/showcase.css"><script src="/assets/showcase.js" defer></script>\n</head>')
 footer=home[home.index('<footer>'):home.index('</footer>')+9]
 cards=[]
@@ -67,7 +67,7 @@ for a in apps:
     if shot(a['slug']):
         fig=f'<figure class="detail-screenshot">{picture(a,True)}<figcaption>Google Play 공개 스크린샷 · 앱 버전에 따라 화면은 달라질 수 있습니다.</figcaption></figure>'
         text=text.replace('</div></div>\n<section>',fig+'</div></div>\n<section>',1)
-    text=re.sub(r'<div class="detail-blog">.*?</div>','',text,flags=re.S)
+    text=re.sub(r'<div class="detail-blog[^"]*">.*?</div>','',text,flags=re.S)  # 다시 돌려도 블로그 링크가 겹쳐 쌓이지 않게
     blog=next((b for b in blogs if b['app']==a['name']),None)
     if blog: text=text.replace('</main>',f'<div class="detail-blog wrap detail"><p class="eyebrow">개발사 블로그</p><a href="{blog["url"]}">{E(blog["title"])} ↗</a></div></main>')
     p.write_text(text,encoding='utf-8')
@@ -76,4 +76,4 @@ for p in (ROOT/'guides').rglob('index.html'):
     if '/assets/showcase.css' not in text: text=text.replace('</head>','<link rel="stylesheet" href="/assets/showcase.css"></head>')
     text=re.sub(r'<header>.*?</header>',nav,text,flags=re.S)
     p.write_text(text,encoding='utf-8')
-print('Built homepage and enhanced 9 app pages.')
+print(f'Built homepage and enhanced {len(apps)} app pages.')
