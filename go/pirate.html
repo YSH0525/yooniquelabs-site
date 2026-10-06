@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>찔러봐 해적 - 유니크랩스</title>
+<meta name="description" content="찔러봐 해적: 해적룰렛 술자리 파티게임. 유니크랩스 파티게임">
+<meta property="og:title" content="찔러봐 해적"><meta property="og:description" content="해적룰렛 술자리 파티게임">
+<meta property="og:image" content="https://yooniquelabs.kr/go/pirate.png">
+<link rel="icon" href="/go/pirate.png">
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;background:#14112b;color:#fff;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center}
+.c{padding:32px 24px;max-width:420px}img{width:132px;height:132px;border-radius:30px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+h1{font-size:28px;margin:18px 0 6px}p{margin:0 0 22px;color:#cfc8ee}
+a.b{display:block;margin:10px 0;padding:16px;border-radius:14px;font-weight:700;font-size:18px;text-decoration:none}
+.p{background:#ffcc33;color:#1a1a1a}.s{background:#2c2652;color:#fff}.n{font-size:14px;color:#a9a2cc;margin-top:18px}
+</style></head><body><div class="c">
+<img src="/go/pirate.png" alt="찔러봐 해적">
+<h1>찔러봐 해적</h1><p>해적룰렛 술자리 파티게임</p>
+<div id="btns"></div>
+<div class="n" id="note"></div>
+<div class="n">유니크랩스 · <a href="https://yooniquelabs.kr" style="color:#a9a2cc">yooniquelabs.kr</a></div>
+</div>
+<script>
+var G={"play":"https://play.google.com/store/apps/details?id=kr.co.yooniquelabs.stabpirate","ios":"https://apps.apple.com/kr/app/id6816601369","web":"https://stab-pirate-party.web.app/","live":true};
+var ua=navigator.userAgent||'';
+var isAnd=/Android/i.test(ua), isIOS=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+var b=document.getElementById('btns'), note=document.getElementById('note');
+function btn(href,label,cls){var a=document.createElement('a');a.href=href;a.className='b '+cls;a.textContent=label;b.appendChild(a);}
+var target=null;
+if(G.live){ if(isAnd) target=G.play; else if(isIOS) target=G.ios||G.web; }
+else { target=G.web; note.textContent='Google Play 출시 준비 중이에요. 지금은 웹에서 바로 플레이할 수 있어요.'; }
+if(G.live) btn(G.play,'Google Play에서 받기','p');
+if(G.ios) btn(G.ios,'App Store에서 받기','p');
+if(G.web) btn(G.web,'설치 없이 웹에서 바로 하기','s');
+if(isIOS&&!G.ios&&!G.web) note.textContent='아이폰 버전은 준비 중이에요. 안드로이드 폰에서 Google Play로 받아 주세요.';
+if(target) location.replace(target);
+</script>
+</body></html>
