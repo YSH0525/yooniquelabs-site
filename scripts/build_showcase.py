@@ -77,3 +77,6 @@ for p in (ROOT/'guides').rglob('index.html'):
     text=re.sub(r'<header>.*?</header>',nav,text,flags=re.S)
     p.write_text(text,encoding='utf-8')
 print(f'Built homepage and enhanced {len(apps)} app pages.')
+
+from build_pdf_reader import build as build_pdf_reader
+build_pdf_reader()
