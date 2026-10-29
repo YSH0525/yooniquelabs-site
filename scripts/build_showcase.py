@@ -80,3 +80,6 @@ print(f'Built homepage and enhanced {len(apps)} app pages.')
 
 from build_pdf_reader import build as build_pdf_reader
 build_pdf_reader()
+
+from build_unique_excel import build as build_unique_excel
+build_unique_excel()

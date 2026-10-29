@@ -2,7 +2,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 root=Path(__file__).resolve().parents[1]
-for route in ['apps/pdf-reader','guides/pdf-reader']:
+for route in ['apps/pdf-reader','guides/pdf-reader','apps/unique-excel','guides/unique-excel']:
     soup=BeautifulSoup((root/route/'index.html').read_text(encoding='utf-8'),'html.parser')
     assert len(soup.select('h1'))==1
     assert soup.select_one('meta[name=description]')['content']
@@ -14,7 +14,7 @@ for route in ['apps/pdf-reader','guides/pdf-reader']:
         if target.is_dir():target=target/'index.html'
         assert target.exists(),str(target)
         if url.fragment:assert BeautifulSoup(target.read_text(encoding='utf-8'),'html.parser').find(id=url.fragment)
-for file,link in [('index.html','/apps/pdf-reader/'),('guides/index.html','/guides/pdf-reader/')]:
+for file,link in [('index.html','/apps/pdf-reader/'),('guides/index.html','/guides/pdf-reader/'),('index.html','/apps/unique-excel/'),('guides/index.html','/guides/unique-excel/')]:
     assert link in (root/file).read_text(encoding='utf-8')
 assert 'apps/pdf-reader/' in (root/'sitemap.xml').read_text(encoding='utf-8')
 print('PASS PDF download and guide metadata, links, fragments and discovery')
