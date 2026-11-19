@@ -1,0 +1,28 @@
+{
+  "_note": "홈페이지 표시용 부가 정보. group=필터 분류, blurb=한 줄 약속, chips=스토어 등록정보에서 확인한 사실, updated=Google Play 업데이트 날짜(2026-11-19 확인), shots=assets/shots/<slug>-N.webp 개수.",
+  "order": ["kokplus","stabpirate","cranedreams","kkalkkeum","omok","ssukssuk","yeogi-parking","crocteeth","clawking3d","gyodae-hannun","janggi","sangsik","foldnote","penguinice","clawdoll","quickbracket","history-study","chosung5","rider-net","juyuhalkka","pdf-mobile","thevanstay"],
+  "apps": {
+    "kokplus": {"group":"운동","blurb":"코트에서는 경기에만 집중하세요.","chips":["대진표 자동 생성","회비·회원 관리","PC 웹 지원"],"updated":"2026-11-19","shots":4},
+    "quickbracket": {"group":"운동","blurb":"소모임 대진표, 현장에서 바로.","chips":["로그인 없음","번호뽑기","단톡방 공유"],"updated":"2026-11-11","shots":4},
+    "kkalkkeum": {"group":"생활","blurb":"함께 쓴 돈, 기분 좋게 나누세요.","chips":["회원가입 없음","차수별 N빵","카카오톡 공유"],"updated":"2026-09-07","shots":4},
+    "yeogi-parking": {"group":"생활","blurb":"차를 세운 곳, 말 한마디로 기록.","chips":["음성메모","사진 기록","홈 화면 위젯"],"updated":"2026-09-07","shots":4},
+    "juyuhalkka": {"group":"생활","blurb":"조금 더 가서 넣으면 정말 이득일까요?","chips":["위치 권한 없음","이동비 반영","비교 기록"],"updated":"2026-08-21","shots":4},
+    "thevanstay": {"group":"생활","blurb":"광안리 숙소, 수수료 없이 직접 예약.","chips":["회원가입 없음","현장결제","숙박·대실"],"updated":"2026-09-22","shots":4},
+    "foldnote": {"group":"기록","blurb":"펼친 화면에, 오늘을 기록하세요.","chips":["광고 없음","오프라인","PIN 잠금"],"updated":"2026-08-20","shots":4},
+    "gyodae-hannun": {"group":"기록","blurb":"반복되는 근무표를 한눈에.","chips":["회원가입 없음","반복 패턴","근무 전 알림"],"updated":"2026-08-21","shots":2},
+    "rider-net": {"group":"기록","blurb":"매출 너머, 내 손에 남는 수익.","chips":["로그인 없음","순수익 계산","CSV 내보내기"],"updated":"2026-09-07","shots":3},
+    "pdf-mobile": {"group":"기록","blurb":"PDF를 고르면, 바로 읽기.","chips":["광고 없음","로그인 없음","읽기 전용"],"updated":"2026-10-30","shots":2},
+    "ssukssuk": {"group":"학습","blurb":"우리 아기 첫 낱말, 보고 듣고 하나씩.","chips":["낱말카드 192장","광고 없음","오프라인"],"updated":"2026-09-25","shots":4},
+    "sangsik": {"group":"학습","blurb":"하루 10문제, 아는 즐거움.","chips":["900문항","광고·결제 없음","오프라인"],"updated":"2026-09-22","shots":4},
+    "history-study": {"group":"학습","blurb":"한국사, 오늘 할 만큼 한 걸음씩.","chips":["개념 73개","문제 162개","계정 없음"],"updated":"2026-10-06","shots":4},
+    "stabpirate": {"group":"게임","blurb":"해적이 튀어나오면, 당첨!","chips":["QR로 입장","설치 없이 참가","팀전"],"updated":"2026-09-30","shots":4},
+    "crocteeth": {"group":"게임","blurb":"콱! 물리면 벌칙.","chips":["QR로 입장","AI 봇","전면광고 없음"],"updated":"2026-09-30","shots":4},
+    "penguinice": {"group":"게임","blurb":"톡톡 두드리다, 펭귄이 풍덩.","chips":["QR로 입장","최대 6명","AI 봇"],"updated":"2026-10-05","shots":4},
+    "clawking3d": {"group":"게임","blurb":"손끝으로 조준하고, 인형을 모으세요.","chips":["스테이지 30개","10회 확정 보장","스윙샷"],"updated":"2026-10-01","shots":4},
+    "cranedreams": {"group":"게임","blurb":"테마 기계 8대, 인형 261종을 모으세요.","chips":["기계 8대","인형 261종","한·영·일"],"updated":"2026-10-23","shots":4},
+    "clawdoll": {"group":"게임","blurb":"놓칠수록 세지는 파워 집게.","chips":["인형 18종","황금 인형","내 진열장"],"updated":"2026-11-10","shots":4},
+    "omok": {"group":"게임","blurb":"비행기 모드에서도, 한 판.","chips":["인터넷 없이","블루투스 대전","AI 19단계"],"updated":"2026-10-19","shots":4},
+    "janggi": {"group":"게임","blurb":"옆 사람과 블루투스로, 장군!","chips":["인터넷 없이","블루투스 대국","AI 19단계"],"updated":"2026-10-19","shots":3},
+    "chosung5": {"group":"게임","blurb":"오늘의 다섯 문제, 머리를 깨우는 시간.","chips":["매일 5문제","무한모드","오프라인"],"updated":"2026-08-23","shots":4}
+  }
+}
